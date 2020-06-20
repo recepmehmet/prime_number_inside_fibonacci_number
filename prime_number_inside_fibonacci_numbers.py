@@ -20,8 +20,7 @@ def is_prime(number):
 def collect_primes_from(source):
     return [ item for item in source if is_prime(item) and item > 1 ]
 
-amount = input("Please enter number time of fibonacci series: ")
-amount = int(amount)
+amount = int(input("Please enter number time of fibonacci series: "))
 fibonacci_generator = fibonacci(amount)
 result = collect_primes_from(fibonacci_generator)
 print(result)
